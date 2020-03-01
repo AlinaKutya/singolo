@@ -1,0 +1,154 @@
+body {
+  font-family: 'Lato', sans-serif;
+  cursor: default;
+}
+
+.wrapper {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.portfolio {
+  height: 864px;
+  background: #2d303a;
+}
+
+.portfolio-bottom {
+  height: 6px;
+  background: #323746;
+}
+
+.portfolio-title {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+
+  margin-left: 40px;
+  padding-top: 68px;
+}
+
+.portfolio-description {
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-weight: 300;
+
+  margin-left: 40px;
+  margin-top: 27px;
+}
+
+.portfolio-menu {
+  margin-left: 41px;
+  margin-top: 11px;
+}
+
+button,
+button:active,
+button:focus {
+  outline: none;
+}
+
+button:active,
+button:focus {
+  color: #dedede;
+  border: 1px solid #c5c5c5;
+}
+
+.portfolio-button {
+  cursor: pointer;
+  height: 22px;
+  border-radius: 5px;
+  background-color: #2d303a;
+  border: 1px solid #666d89;
+  color: #767e9e;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 0 6px;
+  margin-right: 6px;
+}
+
+.portfolio-images {
+  margin-top: 18px;
+  padding: 0 38px;
+  height: 615px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.portfolio-image {
+  width: 220px;
+  height: 187px;
+  margin-bottom: 20px;
+}
+
+.about {
+  height: 728px;
+  background: #f2f2f2;
+}
+
+.about-bottom {
+  height: 6px;
+  background: #ffffff;
+}
+
+.about-title {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+  padding-top: 67px;
+  margin-left: 40px;
+}
+
+.about-description {
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-weight: 300;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 27px;
+  text-align: justify;
+}
+
+.about-cards {
+  margin-top: 45px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-card {
+  width: 300px;
+  height: 443px;
+}
+
+.card-name {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+  margin-top: 15px;
+}
+
+.card-description {
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.card-socials {
+  margin-top: 22px;
+}
+
+img.social {
+  margin-right: 5px;
+  border-radius: 16px;
+}
