@@ -3,11 +3,10 @@ body {
   cursor: default;
 }
 
-.wrapper {
-  width: 1020px;
+.content {
+  width: 940px;
   margin: 0 auto;
 }
-
 .quote {
   background: #f06c64;
 }
@@ -23,7 +22,6 @@ body {
   color: #f0d8d9;
   font-weight: 900;
   padding-top: 68px;
-  margin-left: 40px;
 }
 
 .quote-description {
@@ -31,7 +29,7 @@ body {
   line-height: 30px;
   color: #f0d8d9;
   font-weight: 300;
-  margin: 27px 40px 0;
+  margin-top: 27px;
   text-align: justify;
 }
 
@@ -41,13 +39,8 @@ body {
   padding-bottom: 18px;
 }
 
-form {
-  margin-left: 40px;
-}
-
 .contact-info {
   margin-left: 20px;
-  margin-right: 40px;
 }
 
 textarea,
@@ -144,10 +137,12 @@ button:focus {
 
 footer {
   background: #2d303a;
+  padding: 22px 40px;
+}
+
+footer .content {
   display: flex;
   justify-content: space-between;
-
-  padding: 22px 40px;
 }
 
 .footer-socials a {

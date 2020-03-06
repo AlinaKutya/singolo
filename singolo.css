@@ -3,11 +3,6 @@ body {
   cursor: default;
 }
 
-.wrapper {
-  width: 1020px;
-  margin: 0 auto;
-}
-
 .content {
   width: 940px;
   margin: 0 auto;
@@ -24,7 +19,7 @@ header {
   color: #fff;
   height: 89px;
   position: fixed;
-  width: 1020px;
+  width: 100%;
   z-index: 10000;
 }
 
@@ -196,6 +191,7 @@ h1 {
   height: 6px;
   background-color: #fff;
 }
+
 .portfolio {
   height: 864px;
   background: #2d303a;
@@ -211,8 +207,6 @@ h1 {
   line-height: 18px;
   color: #666d89;
   font-weight: 900;
-
-  margin-left: 40px;
   padding-top: 68px;
 }
 
@@ -221,13 +215,10 @@ h1 {
   line-height: 30px;
   color: #767e9e;
   font-weight: 300;
-
-  margin-left: 40px;
   margin-top: 27px;
 }
 
 .portfolio-menu {
-  margin-left: 41px;
   margin-top: 11px;
 }
 
@@ -258,7 +249,6 @@ h1 {
 
 .portfolio-images {
   margin-top: 18px;
-  padding: 0 38px;
   height: 615px;
   overflow: hidden;
   display: flex;
@@ -288,7 +278,6 @@ h1 {
   color: #666d89;
   font-weight: 900;
   padding-top: 67px;
-  margin-left: 40px;
 }
 
 .about-description {
@@ -296,16 +285,12 @@ h1 {
   line-height: 30px;
   color: #767e9e;
   font-weight: 300;
-  margin-left: 40px;
-  margin-right: 40px;
   margin-top: 27px;
   text-align: justify;
 }
 
 .about-cards {
   margin-top: 45px;
-  margin-left: 40px;
-  margin-right: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -328,7 +313,6 @@ h1 {
   line-height: 22px;
   color: #767e9e;
   font-weight: 400;
-  margin-top: 10px;
   text-align: justify;
 }
 
@@ -356,7 +340,6 @@ img.social {
   color: #f0d8d9;
   font-weight: 900;
   padding-top: 68px;
-  margin-left: 40px;
 }
 
 .quote-description {
@@ -364,7 +347,7 @@ img.social {
   line-height: 30px;
   color: #f0d8d9;
   font-weight: 300;
-  margin: 27px 40px 0;
+  margin-top: 27px;
   text-align: justify;
 }
 
@@ -374,13 +357,8 @@ img.social {
   padding-bottom: 18px;
 }
 
-form {
-  margin-left: 40px;
-}
-
 .contact-info {
   margin-left: 20px;
-  margin-right: 40px;
 }
 
 textarea,
@@ -477,14 +455,16 @@ input:focus {
 
 footer {
   background: #2d303a;
-  display: flex;
-  justify-content: space-between;
-
   padding: 22px 40px;
 }
 
+footer .content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer-socials a {
-  margin-left: 5px;
+  margin-left: 4px;
 }
 
 .copyright {
