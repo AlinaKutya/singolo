@@ -18,7 +18,7 @@ header {
   background-color: #2d303a;
   color: #fff;
   height: 89px;
-  position: fixed;
+
   width: 100%;
   z-index: 10000;
 }
@@ -86,7 +86,6 @@ header ul li:last-child::after {
 }
 
 .slider {
-  margin-top: 83px;
   height: 594px;
   background-color: #f06c64;
 }
@@ -114,8 +113,7 @@ header ul li:last-child::after {
   width: 240px;
   height: 483px;
   padding-top: 53px;
-  padding-left: 0px;
-  padding-right: 73px;
+  padding-right: 72px;
 }
 
 .horizontal {
@@ -193,7 +191,7 @@ h1 {
 }
 
 .portfolio {
-  height: 864px;
+  height: 863px;
   background: #2d303a;
 }
 
@@ -358,7 +356,7 @@ img.social {
 }
 
 .contact-info {
-  margin-left: 20px;
+  margin-left: 21px;
 }
 
 textarea,
@@ -412,7 +410,7 @@ input:focus {
 }
 
 .contact-info-description {
-  margin-top: 10px;
+  margin-top: 9px;
 }
 
 .contact-info-contacts {
@@ -474,21 +472,3 @@ footer .content {
 .contact-info-mail {
   padding-top: 2px;
 }
-
-h1,
-.portfolio-title,
-.about-title,
-.quote-title {
-  position: relative;
-}
-h1 span,
-.portfolio-title span,
-.about-title span,
-.quote-title span {
-  position: absolute;
-  top: -50px;
-}
-
-/*да, это колзхоз
-в следующий раз продумаю все заранее
-*/
