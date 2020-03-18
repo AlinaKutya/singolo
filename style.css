@@ -1,6 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   cursor: default;
+  position: relative;
 }
 
 .content {
@@ -119,7 +124,7 @@ header ul li:last-child::after {
   padding-top: 40px;
 }
 
-.wrapper-carousel {
+.home {
   background-color: #f06c64;
 }
 
@@ -471,7 +476,7 @@ img.social:hover {
   background-color: white;
 }
 
-.quote {
+.contact {
   background: #f06c64;
 }
 

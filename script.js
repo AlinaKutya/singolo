@@ -1,14 +1,20 @@
 //variables
 const NAV = document.querySelector('.navbar > ul');
+
 let images = document.querySelector('.portfolio-images');
 let portfolioMenu = document.querySelector('.portfolio-menu');
 let portfolio = document.querySelector('.portfolio-images');
 
+const BUTTON = document.querySelector('.submit-button');
+const CLOSE_BUTTONS = document.querySelectorAll('.close-button');
+const MESSAGES = document.querySelectorAll('.message-block');
+
+let links = NAV.querySelectorAll('li > a');
+let sections = document.querySelectorAll('section');
+
 // navbar menu selector
 NAV.addEventListener('click', event => {
-  NAV.querySelectorAll('li > a').forEach(el =>
-    el.classList.remove('navbar-active')
-  );
+  links.forEach(el => el.classList.remove('navbar-active'));
   event.target.classList.add('navbar-active');
 });
 
@@ -108,14 +114,10 @@ document
   });
 
 function changeBackground() {
-  document.querySelector('.wrapper-carousel').classList.toggle('blue');
+  document.querySelector('.home').classList.toggle('blue');
 }
 
 // form sending
-
-const BUTTON = document.querySelector('.submit-button');
-const CLOSE_BUTTONS = document.querySelectorAll('.close-button');
-const MESSAGES = document.querySelectorAll('.message-block');
 
 BUTTON.addEventListener('click', () => {
   let subject = document.getElementById('subject').value.toString();
@@ -152,3 +154,26 @@ CLOSE_BUTTONS.forEach(btn => {
     MESSAGES.forEach(el => el.classList.add('hidden'))
   );
 });
+
+//change active menu links on scroll
+
+document.addEventListener('scroll', onScroll);
+
+function onScroll() {
+  let currentPosition = window.scrollY;
+
+  sections.forEach(el => {
+    if (
+      currentPosition >= el.offsetTop - 300 &&
+      currentPosition < el.offsetTop + el.offsetHeight / 2
+    ) {
+      links.forEach(a => {
+        a.classList.remove('navbar-active');
+
+        if (el.getAttribute('class') === a.getAttribute('href').substring(1)) {
+          a.classList.add('navbar-active');
+        }
+      });
+    }
+  });
+}
