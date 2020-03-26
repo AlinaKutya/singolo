@@ -12,10 +12,13 @@ const MESSAGES = document.querySelectorAll('.message-block');
 let links = NAV.querySelectorAll('li > a');
 let sections = document.querySelectorAll('section');
 
+const CHECKBOX = document.querySelector('#checkbox');
+
 // navbar menu selector
 NAV.addEventListener('click', event => {
   links.forEach(el => el.classList.remove('navbar-active'));
   event.target.classList.add('navbar-active');
+  CHECKBOX.checked = false;
 });
 
 //portfolio picture outline
@@ -151,7 +154,11 @@ BUTTON.addEventListener('click', () => {
 
 CLOSE_BUTTONS.forEach(btn => {
   btn.addEventListener('click', () =>
-    MESSAGES.forEach(el => el.classList.add('hidden'))
+    MESSAGES.forEach(el => {
+      console.log(el);
+      el.classList.add('hidden');
+      document.querySelector('form').reset();
+    })
   );
 });
 
