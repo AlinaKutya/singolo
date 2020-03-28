@@ -82,26 +82,26 @@ function nextItem(n) {
   hideItem('to-left');
   changeCurrentItem(n + 1);
   showItem('from-right');
+  changeBackground();
 }
 
 function previousItem(n) {
   hideItem('to-right');
   changeCurrentItem(n - 1);
   showItem('from-left');
+  changeBackground();
 }
 
 document.querySelector('.control.left').addEventListener('click', function() {
   if (isEnabled) {
     previousItem(currentItem);
   }
-  changeBackground();
 });
 
 document.querySelector('.control.right').addEventListener('click', function() {
   if (isEnabled) {
     nextItem(currentItem);
   }
-  changeBackground();
 });
 
 document
