@@ -1,3 +1,61 @@
+/*
+** reset css
+*/
+
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+a {
+  padding: 0;
+}
+address,
+body,
+div,
+footer,
+form,
+h1,
+h2,
+header,
+html,
+img,
+label,
+li,
+menu,
+nav,
+p,
+section,
+span,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: 0 0;
+}
+body {
+  line-height: 1;
+}
+ul {
+  list-style: none;
+}
+a {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: 0 0;
+}
+input {
+  vertical-align: middle;
+}
+
+/*****/
+
 html {
   scroll-behavior: smooth;
 }
