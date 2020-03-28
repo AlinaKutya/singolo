@@ -131,7 +131,6 @@ header ul li:last-child::after {
   position: relative;
   max-width: 1020px;
   width: 100%;
-
   margin: 0 auto;
 }
 
@@ -510,8 +509,8 @@ h1 {
 }
 
 .portfolio {
-  height: 864px;
   background: #2d303a;
+  padding-bottom: 68px;
 }
 
 .portfolio-bottom {
@@ -604,11 +603,7 @@ h1 {
   }
 
   .portfolio {
-    height: 1100px;
-  }
-
-  .portfolio-images {
-    height: 810px;
+    padding-bottom: 65px;
   }
 }
 
@@ -631,7 +626,7 @@ h1 {
   }
 
   .portfolio {
-    max-height: 805px;
+    padding-bottom: 42px;
   }
 
   .portfolio-title {
