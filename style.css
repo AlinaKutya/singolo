@@ -246,8 +246,8 @@ header label {
   }
 
   header ul {
-    padding-top: 35vh;
-    padding-left: 35vw;
+    padding-top: 232px;
+    padding-left: 71px;
   }
 
   header ul li {
@@ -271,7 +271,7 @@ header label {
     -webkit-box-shadow: 6px -1px 6px 0px rgba(0, 0, 0, 0.41);
     -moz-box-shadow: 6px -1px 6px 0px rgba(0, 0, 0, 0.41);
     box-shadow: 6px -1px 6px 0px rgba(0, 0, 0, 0.41);
-    width: 75vw;
+    width: 278px;
     height: 100vh;
     transition: all 0.4s ease;
     left: -200%;
@@ -284,7 +284,7 @@ header label {
     display: block;
     position: absolute;
     top: 22px;
-    left: 35vw;
+    left: 71px;
   }
 
   .logo a,
@@ -308,15 +308,17 @@ header label {
     position: relative;
     margin: 0 auto;
     padding: 0 20%;
+    max-width: 100%;
   }
 
   header label {
     cursor: pointer;
     display: block;
     position: absolute;
-    top: 50%;
-    left: 5vh;
+    top: 23px;
+    left: 22px;
     z-index: 12000;
+    transition: all 0.4s ease;
   }
 
   #checkbox:checked ~ .navbar {
@@ -329,11 +331,10 @@ header label {
 
   #checkbox:checked ~ label {
     transform: rotate(90deg);
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
   }
 
   .navbar {
-    max-width: 75vw;
     padding-top: 0;
     top: 0;
     left: 0;
@@ -576,7 +577,6 @@ h1 {
 .portfolio-images {
   margin: 0 auto;
   margin-top: 15px;
-  height: 600px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
