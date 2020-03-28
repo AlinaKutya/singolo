@@ -890,16 +890,16 @@ footer .content {
 }
 
 .message {
-  color: #2d303a;
+  box-sizing: border-box;
   text-align: center;
   border-radius: 6px;
-  padding: 20px 30px;
+  padding: 35px 25px 20px;
   background: white;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 18px;
+  font-size: 22px;
   overflow: hidden;
 }
 

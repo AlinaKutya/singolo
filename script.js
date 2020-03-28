@@ -122,17 +122,16 @@ function changeBackground() {
 
 // form sending
 
-BUTTON.addEventListener('click', () => {
+document.querySelector('form').addEventListener('submit', event => {
+  event.preventDefault();
+
   let subject = document.getElementById('subject').value.toString();
   let description = document.getElementById('description').value.toString();
 
   if (
-    !document.getElementById('email').value ||
-    !document.getElementById('name').value
+    document.getElementById('email').checkValidity() &&
+    document.getElementById('name').checkValidity()
   ) {
-    document.querySelector('.message-error').classList.remove('hidden');
-    return;
-  } else {
     if (!subject) {
       document.getElementById('subject-result').innerText = 'Without subject';
     } else {
@@ -148,7 +147,7 @@ BUTTON.addEventListener('click', () => {
         'Description: ' + description;
     }
 
-    document.querySelector('.message-block').classList.remove('hidden');
+    document.querySelector('.message-send').classList.remove('hidden');
   }
 });
 
